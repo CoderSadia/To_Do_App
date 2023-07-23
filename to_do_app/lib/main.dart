@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:to_do_app/views/SplashScreen/splash_screen.dart';
+import 'package:to_do_app/src/features/views/SplashScreen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +14,7 @@ class MyApp extends StatelessWidget {
     // ignore: prefer_const_constructors
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  const SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
-

@@ -1,10 +1,9 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:to_do_app/utils/colors.dart';
-import 'package:to_do_app/utils/config.dart';
-import 'package:to_do_app/views/HomeScreen/home_screen.dart';
+import 'package:to_do_app/src/constants/colors.dart';
+import 'package:to_do_app/src/constants/config.dart';
+import '../HomeScreen/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,10 +15,10 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Timer(const Duration(seconds: 1), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
+          MaterialPageRoute(builder: (context) => HomeScreen()),
           (route) => false);
     });
     super.initState();
